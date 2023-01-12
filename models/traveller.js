@@ -66,8 +66,8 @@ Traveller.prototype.calculateTotalDistanceTravelled = function () {
 
 Traveller.prototype.getUniqueModesOfTransport = function () {
   // let jArray=[]
-  function onlyUnique(value, index, self) { 
-    return self.indexOf(value) === index;
+  function onlyUnique(transport, index, array) { 
+    return array.indexOf(transport) === index;
 }
   // const uniqueTransport=this.journeys.forEach((journey)=>{
   //   jArray.push(journey.transport)
